@@ -1,0 +1,7 @@
+services:
+    edemy.backup:
+        class: "eDemy\BackupBundle\Controller\BackupController"
+        calls:
+            - [setEventDispatcher, ["@event_dispatcher"]]
+        tags:
+            - { name: kernel.event_subscriber }

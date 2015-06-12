@@ -1,0 +1,5 @@
+edemy_backup:
+    path:           /{_locale}/backup
+    defaults:       { _controller: edemy.main:indexAction }
+    methods:        [ GET, POST ]
+    requirements:   { _locale: es|en }
